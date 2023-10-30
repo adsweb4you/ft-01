@@ -1,0 +1,169 @@
+*{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: BPG;
+    src: url('../fonts/bpg_nino_mtavruli_bold.ttf');
+}
+
+p{
+   
+    line-height: 15px; /* დაშორება ხაზებს შორის */
+}
+
+.mycolor {
+    color:red;
+}
+
+
+#headcolor {
+    color: rgb(128, 0, 92);
+}
+
+h1{
+    color: hsl(0, 0%, 100%); /*ფერის მინიჭება*/
+    font-size: 28px;  /*ფონტის ზომა*/
+    font-family: BPG;  /*ფონტის ტიპი*/
+    font-weight: bold;  /*ფონტის სისქე*/
+    text-align: center;  /*ტექსტის განლაგება*/
+    text-decoration:line-through; /*ტექსტის ხაზები*/
+    text-shadow: 10px 20px 9px red; /* ტექსტის შუქჩრდილები */
+    text-overflow: ellipsis; /* დამალული ტექსტის სტილი */
+    overflow: hidden; /* სამომავლოდ შევეხებით (მალავს ზომიდან გასულ კონტენტს) */
+    width: 150px; /* ელემენტის ზომა */
+}
+
+h3{
+    color: #fff;
+    text-align:  center;
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+header {
+    background-color:green; /* ფონის ფერის თვისება */
+    background-image: url('../img/download.jpg');  /* ფონის ფოტოს თვისება */
+    background-repeat: no-repeat;  /* ფონის ფოტოს  გამეორების თვისება */
+    background-size: cover; /* ფონის ფოტოს  ზომის თვისება */
+    background-position: center;  /* ფონის ფოტოს  განლაგების თვისება */
+    background-attachment: fixed; /* ფონის ფიქსირების  თვისება */
+   /* background-blend-mode: overlay;   ფონის ფერის და ფოტოს   კომბინაცია  თვისება */
+    height: 400px; /* სიმაღლის თვისება */
+    /* background-image: linear-gradient(45deg, #ccc, red ); */
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+    /* border-style: dashed;
+    border-width: 5px;
+    border-color: green;
+  */
+   /* border-left:1px dashed  red;
+   border-right:1px dashed  green;
+   border-top:1px dashed  rgb(13, 38, 228);
+   border-bottom: 5px solid yellow; */
+   /* border: 6px solid green; */
+   background-image: url('../img/icon/12.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #fff;
+   outline: 1px solid rgb(255, 255, 255);
+   outline-offset: -5px;
+   border-radius: 32px;
+}
+
+h5{
+    text-align: center;
+}
+
+.content{
+    background-color: crimson;
+    color: #000000;
+    width: 300px;
+    max-width: 100%;
+    height: 150px;
+}
+
+.cards{
+    width: 350px;
+    padding: 25px;
+    height: 450px;
+    background-color: aquamarine;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 
+.product{
+    background-color: #1e4bff;
+    width: 350px;
+    border-radius: 15px;
+    font-family: BPG;
+    margin:15px  auto;
+    padding: 7px;
+    box-shadow: 11px 10px 34px #1e4bff73;
+    transition: all 1.6s ease;
+}
+
+.prod_img{
+    width: 100%;
+}
+
+.zprice{
+    font-size: 13px;
+    background-color: rgb(247, 144, 9);
+    color: #fff;
+    border-radius: 20px;
+    padding: 11px;
+    width: fit-content;
+}
+
+.price{
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+small{
+    font-size: 11px;
+    margin-top: 7px;
+}
+.descr{
+    margin: 7px 0   ;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    background-color: crimson;
+    border-radius: 7px;
+    padding: 15px;
+    color: #fff;
+    border:0 ;
+}
+
+.card_body{
+    padding: 8px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.product:hover{
+    background-color: crimson;
+}
+
+input:focus{
+    background-color: green;
+}
+
+a:visited{
+    color: red;
+}
+
+.btn:active{
+ background-color: green;
+}
