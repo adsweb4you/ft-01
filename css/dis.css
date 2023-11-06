@@ -1,3 +1,8 @@
+@font-face {
+    font-family: arials;
+    src: url('../bpg_arial_2009.ttf');
+}
+
 *{
     box-sizing: border-box;
     margin-block-start: 0;
@@ -60,3 +65,64 @@ div {
 .col img {
     width: 100%;
 }
+
+.menu{
+    font-family: arials;
+}
+
+ nav{
+    margin-top: 25px;
+ }
+
+nav ul {
+    margin: auto;
+    padding-left: 0;
+    width: fit-content;
+    background-color: black;
+    border-radius: 7px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul li a{
+ color: #fff;
+ text-decoration: none;
+}
+
+nav ul li.active{
+    background-color: #008000;
+    border-radius: 7px;
+}
+
+.contents{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    color: black;
+    flex-wrap: wrap;
+}
+
+nav{
+ width: 100%;
+ padding: 25px;
+}
+
+main{
+    width: 60%;
+    padding: 25px;
+    background-color: #008000;
+   }
+
+   aside{
+    width: 40%;
+    padding: 25px;
+    height: 450px;
+   }
+
+   footer{
+    width: 100%;
+    padding: 25px;
+   }
