@@ -126,3 +126,54 @@ main{
     width: 100%;
     padding: 25px;
    }
+
+   .myheader{
+    height: 450px;
+    display: flex;
+    flex-direction: row; /* flex განლაგება */
+    gap:15px;  /* აკეთებს სიცარიელეს ელემენტებს შორის */
+    background-image: url('https://media.architecturaldigest.com/photos/57c7003fdc03716f7c8289dd/16:9/w_1280,c_limit/IMG%20Worlds%20of%20Adventure%20-%201.jpg');
+    background-position: center;
+    background-size: cover;
+    align-items: center; /* ვერტიკალური განლაგება */
+    justify-content: center; /* ჰორიზონტალური განლაგება */
+   }
+
+
+.myheader h1 {
+    background-color: rgba(0, 0, 0, 0.433);
+    padding: 15px;  
+    border-radius: 7px; 
+}
+
+/* .first{
+    order: 1;
+}
+
+.sec{
+    order: 2;
+}
+
+.thtr{
+    order: 3;
+} */
+
+.inlfl{
+    display: inline-flex;
+    background-color: #1e4bff;
+}
+
+.thtr i{
+   font-size: 50px;
+   background-color: #1e4bff;
+   color: #fff;
+   border-radius: 15px;
+   padding: 15px;
+   
+}
+
+.thtr{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
