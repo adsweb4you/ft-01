@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.paranets > p{
+    color: red;
+}
+
+.paranets + h4{
+    background-color: rgb(128, 0, 0);
+}
+
+.paranets ~ h4{
+    background-color: green;
+}
+
+/* input + span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+}
+
+input:checked + span {
+    background-color: green;
+} */
+
+.costumcheck{
+    width: 50px;
+    height: 25px;
+    border-radius: 17px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+.mycheck{
+    display: none;
+}
+
+.costumcheck label {
+  cursor: pointer;
+  height: 100%;
+  display: block;
+}
+
+.costumcheck span{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    background-color: red;
+    top: 4px;
+    left: 5px;
+    transition: all .6s ease-in-out;
+}
+
+.mycheck:checked + span {
+    background-color: rgb(0, 255, 17);  
+    left: 55%;
+}
+
+/* ნავბარი */
+
+nav{
+    background-color: rgb(57, 57, 251);
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 17px 16px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.drops{
+    position: absolute;
+    top:53px;
+    background-color: #3939fb;
+    min-width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s linear;
+    border-radius: 0 0 7px 7px;
+}
+
+.drops a{
+    display: block;
+    padding: 12px;
+}
+
+.drops a:hover{
+  background-color: #ccc;
+  color: blue;
+}
+nav ul li:hover  .drops{
+   opacity: 1;
+   pointer-events: all;
+}
