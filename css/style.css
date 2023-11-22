@@ -34,6 +34,7 @@ h1{
     text-overflow: ellipsis; /* დამალული ტექსტის სტილი */
     overflow: hidden; /* სამომავლოდ შევეხებით (მალავს ზომიდან გასულ კონტენტს) */
     width: 150px; /* ელემენტის ზომა */
+    white-space: nowrap; 
 }
 
 h3{

@@ -1,3 +1,10 @@
+:root{
+    --basecolor:red;
+    --secendcolor:rgb(255, 255, 255);
+   
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -102,4 +109,165 @@ nav ul li a{
 nav ul li:hover  .drops{
    opacity: 1;
    pointer-events: all;
+}
+
+/* .search{
+    width: 350px;
+    margin: auto;
+    position: relative;
+}
+
+.search input{
+    outline: none;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-bottom: 2px solid blue;
+}
+
+.search label{
+    position: absolute;
+    left: 8px;
+    top: 0;
+    pointer-events: none;
+    transition: all .3s linear;
+}
+
+.search input:focus + label {
+  top: -25px;
+} */
+
+/* [type="text"] {
+  background-color: red;
+} */
+
+.mychecks:invalid {
+    border: 4px solid rgb(128, 0, 0);
+}
+
+.mychecks:valid {
+    border: 4px solid green;
+}
+
+.mychecks:read-only {
+ background-color: #ccc;
+ cursor: not-allowed;
+}
+
+.list p:nth-child(2){
+  background-color: green;
+}
+
+.list p:first-child{
+background-color: rgb(128, 0, 0);
+}
+
+.list p:last-child{
+background-color: rgb(6, 0, 128);
+}
+
+.text p::first-line{
+      background-color: #3939fb;
+}
+
+.text p::first-letter{
+   color: #fff;
+   font-size: 25px;
+}
+
+.color div {
+    height: 25px;
+}
+
+.color div:nth-child(odd) {
+    background-color: green;
+}
+
+.color div:nth-child(even) {
+    background-color: rgb(128, 13, 0);
+}
+
+.color div:not(.bg){
+    width: 50px;
+}
+
+.element{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: aqua;
+}
+
+.element::after{
+    content: " ";
+    width: 150px;
+    height: 150px;
+    background-color: #3939fb;
+    display: block;
+}
+
+.element::before{
+    content: " ";
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    display: block;
+}
+
+p::selection{
+    background-color: red;
+    color: #fff;
+}
+
+.langnav a:lang(en){
+    color: green;
+}
+
+.langnav a:lang(ka){
+    color: red;
+}
+
+.box1{
+    width: 250px;
+    margin: auto;
+    border: 1px solid red;
+}
+
+.box1 img{
+ width: 100%;
+ opacity: 1;
+ object-fit: cover;
+ transition: all .6s;
+ height: 350px;
+}
+.box1 img:hover{
+    opacity: .5;
+}
+
+html, body {
+    font-size: 20px;
+}
+
+.parents{
+    font-size: 14px;
+}
+
+.parents p{
+ font-size: 3em;
+}
+
+.sidenav{
+    width: 10vw;
+    height: 100vh;
+    position: fixed;
+    background-color: blue;
+    top: 0;
+    color: var(--secendcolor);
+}
+
+.sidenav::before{
+  content: attr(data-text);
 }
