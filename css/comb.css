@@ -263,6 +263,7 @@ html, body {
     width: 10vw;
     height: 100vh;
     position: fixed;
+    display: none;
     background-color: blue;
     top: 0;
     color: var(--secendcolor);
@@ -270,4 +271,68 @@ html, body {
 
 .sidenav::before{
   content: attr(data-text);
+}
+
+ 
+
+.box2{
+    width: 400px;
+    position: absolute;
+    height: 400px;
+    background-color: #3939fb;
+    transform: rotate3d(1, 3, 1, 58deg);
+    transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    left:0;
+    opacity: 1;
+    /* transform: translateX(10%); */
+}
+
+.eff:hover .box2:first-child{
+    left: 75px;
+    transform: rotate3d(1, 3, 2, 58deg) ;
+    opacity: .6;
+}
+
+.eff:hover .box2:nth-child(2){
+    left: 142px;
+    transform: rotate3d(1, 3, 2, 58deg) ;
+    opacity: .3;
+}
+
+.mybord{
+    width: 300px;
+    height: 50px;
+    background-color: #3939fb;
+    transform: skew(4deg);
+}
+
+.mybord:hover{
+    transform: skew(4deg) scale(2);
+}
+
+.anim{
+    width: 150px;
+    height: 150px;
+    background-color: #3939fb;
+    animation-name: move;
+    left: 0;
+    position: absolute;
+    animation-duration: 1.6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+ 
+}
+
+@keyframes move {
+     from{
+        left: 0;
+        background-color: #3939fb;
+     }
+
+     to{
+        left:90%;
+        background-color: #56fb39;
+     }
 }
