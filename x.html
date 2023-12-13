@@ -4,57 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-      *{
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    *{
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(182, 182, 182);
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
 }
 header{
-    background-color: aqua;
-    width: 1900px 100%;
-    height: 300px;
-    justify-content: center;
-    display: flex;    
+    background-image: url(Rectangle\ 12.png);
+    background-color: opacity 0.9;
+    background:linear-gradient(119deg, #ED4690 -2.11%, #52C 63.58%);;
 }
-.lik{
-    background-color: rgb(0, 161, 161);
-    height: 100px;
-    text-align: center;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 20px;
+header nav div div a img{
+    margin-bottom: 12px;
+}
+.hdr-div{
+    width: 90%;
+    margin: auto;
+}
+.itemy{
+    border-radius: 50%;
+    border: ridge white 2px;
 
 }
-a{
-    text-decoration:none ;
-    color: black;
+.pic1{
+    margin-top: 100px;
 }
-.sec{
-    margin-top: 10px;
-    background-color: white;
-    text-align: center;
-    border-radius: 5px;
+.beln{
+
+    justify-content: space-between;
 }
-    </style>
+.txt1{
+    margin-top: 100px;
+    color:white ;
+}
+.texaa{
+    display: inline-block;
+}
+.a-1{
+    border-radius: 50px;
+    padding: 20px;
+    background-color:#F5167E;
+    text-decoration: none;
+    color: white;
+}
+.a-1:hover{
+    text-decoration: none;
+}
+.a-2{
+    border: 1.5px solid #FFF;
+    padding: 20px;
+    border-radius: 50px;
+ 
+}
+.chos{
+    width: 70%;
+    height: 150px;
+    border-radius: 20px;
+    background: #242565;
+    box-shadow: 0px 10px 50px 0px rgba(61, 55, 241, 0.25);
+    position: absolute;
+    margin: auto;
+}
+  </style>
 </head>
 <body>
-<div>
-    <div>     
-        <header> <h1>STICKY HEADER POV!</h1></header>
+<header>
+    <div class="hdr-div"> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="#"><img src="ticket-2 1.png" alt="">Eventick </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#">Login</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-fluid" src="img/bg.png" alt="">
+            </div>
+    
+        <div class="col-lg-6">
+            <div class="texaa"> 
+                <h1 class="txt1">SBS MTV The Kpop Show Ticket Package</h1>
+                <p class="txt1">Look no further! Our SBS The Show tickets are the simplest way for you to experience a live Kpop recording.</p>
+                <a class="a-1" href="#">Get Ticket</a>
+                <a class="a-2" href="#">Learn More</a>
+                </div>
+        </div>
     </div>
-    <div class="lik">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Gallery</a>
-        <a href="">Contact</a>
-    </div>
-    <div class="sec">
-        <h1>This is some steezy stuff</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae accusamus beatae dolorum voluptatibus delectus velit blanditiis illum sint. Est, ipsam. Numquam ipsam, veritatis unde dolorem soluta veniam. Officia, aperiam atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tempore, sint, iure obcaecati consequatur saepe eveniet nulla distinctio asperiores autem, est porro deserunt quisquam ullam eligendi temporibus eius officiis possimus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil facilis exercitationem ea laboriosam veritatis dolorum accusantium placeat dignissimos cupiditate nostrum, beatae modi soluta nisi. Nisi at voluptate natus doloribus porro.</p>
-    </div>
+ 
+</header>
+<div class="chos">
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Search Event </option>
+        <option value="1">Foundaiton</option>
+        <option value="2">Travis Scott</option>
+        <option value="3">LilNas</option>
+      </select>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Place</option>
+        <option value="1">chicago</option>
+        <option value="2">NY</option>
+        <option value="3">LA</option>
+      </select>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Time</option>
+        <option value="1">12:00</option>
+        <option value="2">16:00</option>
+        <option value="3">20:00</option>
+      </select>
 </div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
 </body>
 </html>

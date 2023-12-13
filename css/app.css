@@ -1,0 +1,62 @@
+.content h1 {
+  border-radius: 7px;
+}
+
+.content {
+  background-color: chartreuse;
+  background-image: url("../img/download.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  position: relative;
+}
+.content h1 {
+  text-align: center;
+}
+.content h1 span {
+  color: black;
+}
+.content:hover {
+  height: 200px;
+}
+.content::before {
+  content: "";
+  height: 25px;
+  position: absolute;
+  background-color: red;
+  width: 100%;
+}
+
+header {
+  height: 400px;
+  color: red;
+  font-size: 18px;
+}
+header .cl1 {
+  margin-top: 6px;
+}
+header .cl2 {
+  margin-top: 7px;
+}
+header .cl3 {
+  margin-top: 8px;
+}
+
+form input {
+  border: 1px solid #fff;
+  height: 25px;
+  border-radius: 25px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-color: black;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

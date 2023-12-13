@@ -1,0 +1,78 @@
+@use 'form.scss';
+
+$color:black;
+
+@mixin Fcenter($padd){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $padd;
+}
+
+@mixin mycolor($basecolor:#000, $selectors...){
+  @if  $basecolor == #000  {
+    color:#fff;
+  }@else{
+    color:red;
+  }
+  font-size: 18px;
+
+  @for $i from 0 to length($selectors) {
+    #{nth($selectors, $i + 1)} {
+      margin-top:($i + 6) + px;
+    }
+  }
+  
+
+}
+
+ %ext{
+    border-radius: 7px;
+ }
+
+.content{
+    background-color: chartreuse;
+    background: {
+    image:url('../img/download.jpg');
+    position: center;
+    repeat:no-repeat;
+    size:cover;
+
+   };  
+    height: 400px;
+    @include Fcenter(25px);
+    h1{
+        text-align:center;
+        @extend  %ext;
+
+        span{
+            color: $color;
+        }
+
+    }
+    &:hover{
+        height: 200px;
+    }
+position: relative;
+    &::before{
+        content: "";
+        height: 25px;
+        position: absolute;
+        background-color: red;
+        width: 100%;
+    }
+}
+
+header{
+    height: 400px;
+    @include mycolor(green, ".cl1", '.cl2', '.cl3');
+}
+
+
+form{
+    input{
+        border: form.$myinput;
+        @include form.Control(25px);
+    }
+}
+@import "__responsive.scss" 

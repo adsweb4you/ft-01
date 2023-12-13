@@ -1,0 +1,6 @@
+$myinput : 1px solid #fff;
+
+@mixin Control($radius){
+    height: 25px;
+    border-radius:$radius;
+}

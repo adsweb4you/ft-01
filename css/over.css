@@ -34,3 +34,102 @@ body{
     right: -5%;
     opacity: 1;
 }
+
+ 
+.content::-webkit-scrollbar {
+     width: 2px;
+ }
+ 
+ .content::-webkit-scrollbar-track {
+    background-color:#fff; 
+     border-radius: 0px;
+ }
+ 
+ .content::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+      background-color: rgb(255, 255, 255);
+ }
+
+ .box{
+    width: 600px;
+    height: 600px;
+    max-width: 100%;
+    margin: auto;
+    background-color: blue;
+ }
+
+ .grid{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .col{
+    width: 33.333333%;
+    padding: 0 15px;
+ }
+
+ 
+ .col div{
+  background-color: rgb(168, 226, 43);
+  height: 200px;
+  color: #fff;
+ }
+
+ @media (max-width:1200px){
+    .col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+ }
+
+ @media (max-width:992px){
+    .col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+ }
+
+ @media (max-width:1000px){
+
+
+    .box{
+      background-color: red;
+    }
+
+ }
+
+ @media (max-width:800px){
+
+
+    .box{
+      background-color:green;
+    }
+
+ }
+
+ @media (min-width:1400px){
+    body{
+        background-color: black;
+    }
+ }
+
+ @media (min-width:600px) and (max-width:800px){
+    body{
+        background-color: aqua;
+    }
+ }
+
+
+ @media print {
+    .content{
+        margin: inherit;
+        width: 100%;
+        text-align: center;
+    }
+ }
+
+ @media only screen and (max-width:900px) {
+   body{
+    background-color: blueviolet;
+   }
+ }
