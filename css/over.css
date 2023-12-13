@@ -12,7 +12,8 @@ body{
     height: 200px;
     background-color: aqua;
     margin: auto;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .content span {
